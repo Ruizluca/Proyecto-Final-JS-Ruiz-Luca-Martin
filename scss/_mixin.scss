@@ -1,0 +1,17 @@
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin inlineblock-relative-8 {
+    display: inline-block;
+    position: relative;
+    width: 8%;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

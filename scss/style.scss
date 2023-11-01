@@ -1,0 +1,969 @@
+@import 'colores';
+@import 'mixin';
+
+
+@media  screen and (min-width: 989px) {
+
+
+    .header-nav{
+        font-weight: bold;
+    }
+    
+.backgroundcolor-nav{
+    background-color: $backgroundcolor-nav;
+}
+
+    .letra-nav{
+        color: $color-primario;
+        font-size: 25px;
+    }
+
+
+    /*INDEX*/
+    
+    
+
+    .img-textos{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+         ,url(../imagenes/Imagen\ de\ WhatsApp\ 2023-06-07\ a\ las\ 15.45.41.jpg);
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 88vh;
+         display: flex;
+         justify-content: center;
+         align-items: end;
+         flex-direction: column;
+         padding-right: 45px;
+    }
+    
+    .solodesktop  h1{
+    color: $color-primario;
+    font-size: 85px;
+    font-weight: bold;
+    padding-right: 200px;
+    }
+    
+    
+    .solodesktop 
+    h2{
+    color: $color-primario;
+    font-size: 36px;
+    font-weight: bold;
+    padding-right: 100px;
+    }
+    
+
+    .solodesktop p{
+    color: $color-primario;
+    font-size: 21px;
+    width: 57%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 3px;
+    }
+
+/*A ESTA CLASE QUE LE APLIQUE DISPLAY NONE ES EL INDEX SOLO PARA VISTA MOBILE Y TABLET*/
+    .texto1{
+        display: none;
+    }
+
+
+    .footerindex{
+        display: flex;
+        justify-content: end;
+        margin-right: 25px;
+    }
+    
+    .logofacebook-index{
+        width: 40px;
+        margin: 10PX;
+    }
+    
+    .logowhatsapp-index{
+        width: 40px;
+        margin: 10PX;
+    }
+    
+    .logoinstagram-index{
+        width: 59px;
+    }
+
+
+
+    /*GALERIA*/
+    .galeria-de-anuel h1 {
+        @include flex-row-center;
+        color: $color-secundario;
+        font-size: 50px;
+        font-weight: bold;
+        }
+    
+        .galeria-de-anuel{
+            background-color: rgba(160, 177, 255, 0.788);
+        }
+    
+        .imganuel1 img{
+                width: 180px;
+                height: 150px;
+                object-fit: cover; 
+                transition: 0.5s;
+            }
+
+            .imganuel1 img:hover {
+        width: 200px;
+        height: 180px;
+            }
+
+
+        .imganuel1{
+            @include flex-row-center;
+            margin: 0 auto;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            }
+       
+
+.footergaleria{
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+    .logofacebook-galeria{
+        width: 40px;
+        margin: 10px;
+    }
+    
+    .logowhatsapp-galeria{ 
+        width: 40px;
+        margin: 10px;
+    }
+    
+    .logoinstagram-galeria{
+        width: 58px;
+    }
+       
+    
+
+    
+
+
+    /* Canciones */
+
+    .anuelspotify{
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        padding: 6px;
+    }
+
+        .footercanciones{
+            display: flex;
+            justify-content: end;
+            margin-right: 25px;
+        }
+
+    .logofacebook-canciones{
+        width: 40px;
+        margin: 10px;
+    }
+    
+    .logowhatsapp-canciones{ 
+        width: 40px;
+        margin: 10px;
+    }
+    
+    .logoinstagram-canciones{
+        width: 60px;
+        
+    }
+
+
+
+
+    /* Contacto */
+    
+        .titulocontacto h1{
+            @include flex-row-center;
+            font-size: 50px;
+            margin-top: 10px;
+            color: $color-secundario;
+            font-weight: bold;
+        }
+
+
+        .contacto-formulario { 
+            
+            padding: 10px 20px; 
+            display: flex;
+            flex-direction: column; 
+            background-color: #6c7bff; 
+            border-radius: 30px; 
+            margin: 0 25px 15px 25px; 
+        } 
+
+        .contacto-label {  
+            margin-top: 15px; 
+            color: $color-primario; 
+            font-weight: bold;
+        } 
+
+        .contacto-input { 
+            border: none; 
+            border-radius: 20px; 
+            padding: 8px; 
+            background-color: $color-primario; 
+            border-color: $color-primario; 
+        } 
+
+        .contacto-mensaje { 
+            border: none; 
+            border-radius: 20px; 
+            padding: 8px; 
+            height: 150px; 
+            background-color: $color-primario; 
+            border-color: $color-primario; 
+        } 
+
+        .contacto-enviar { 
+            background-color: $color-secundario; 
+            color: $color-primario; 
+            border: none; 
+            border-radius: 15px; 
+            width: 80px; 
+            padding: 8px; 
+            transition: background-color 0.5s;
+        }
+
+        .footercontacto{
+            display: flex;
+            justify-content: end;
+            margin-right: 35px;
+           }
+
+       .logofacebook{
+        width: 40px;
+        margin: 10px;
+       }
+    
+       .logowhatsapp{
+        width: 40px;
+        margin: 10px;
+       }
+    
+       .logoinstagram{
+        width: 58px;
+       }
+    
+
+
+    
+
+       /*INFORMACION*/
+           
+
+.paginformacion{
+    background-color: rgba(0, 60, 255, 0.192);
+   }
+    .articles-informacion{
+        padding: 0.8%;
+    }
+    .backgroundcolor-nav-info{
+        background-color: $color-secundario;
+        height: 26px;
+    }
+
+    .letra-nav-info{
+     color: $color-secundario;
+     background-color: #46464615;
+     font-size: 19px;
+    }
+
+
+    .subtitulosh2 p {
+        font-family: 'REM', sans-serif;
+    }
+
+            .footerinformacion{
+             display: flex;
+             justify-content: end;
+             margin-right: 25px;
+            }
+
+            .logofacebook-informacion{
+                width: 40px;
+                margin: 10px;
+            }
+            
+            .logowhatsapp-informacion{
+                width: 40px;
+                margin: 10px;
+            }
+            
+            .logoinstagram-informacion{
+                width: 60px;
+            }
+        }
+
+            
+
+
+
+
+
+
+
+
+
+/*AJUSTE DE TAMAÑOS ENTRE DESKTOP Y MOBILE*/
+
+@media screen and (min-width:700px) and (max-width: 988px){
+
+    .colorhamburguesa{
+        color: $color-primario;
+        background-color: $color-primario;
+    }
+
+    
+
+    .backgroundcolor-nav{
+        background-color: $backgroundcolor-nav;
+        }
+
+        .letra-nav{
+            color: $color-primario;
+            font-size: 26px;
+        }
+
+
+
+
+/* Index */
+
+.solodesktop{
+    display: none;
+}
+
+.imagen{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+     ,url(../imagenes/mobilenuevo.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 70vh;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+}
+
+.texto1  {h1{
+background-color: rgba(0, 0, 0, 0.185);
+color: $color-primario;
+font-size: 70px;
+writing-mode: vertical-rl;
+text-orientation: upright;
+font-weight: bold;
+position: relative;
+left: 5px;
+bottom: 25px;
+
+}
+}
+.textos{
+background-color: $color-secundario;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.texto1 {
+h2{
+color: $color-primario;
+text-align: center;
+font-size: 30px;
+margin-top: 20px;
+width: 100%;
+font-weight: bold;
+}
+}
+.texto1 p{
+color: $color-primario;
+font-size: 28px;
+width: 70%;
+text-align: center;
+
+}
+
+.footerindex{
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+.logofacebook-index{
+    width: 40px;
+    margin: 10PX;
+}
+
+.logowhatsapp-index{
+    width: 40px;
+    margin: 10PX;
+}
+
+.logoinstagram-index{
+    width: 59px;
+}
+
+
+/*GALERIA*/
+.galeria-de-anuel h1 {
+    @include flex-row-center;
+    color: $color-secundario;
+    font-size: 50px;
+    font-weight: bold;
+    }
+
+    .galeria-de-anuel{
+        background-color: rgba(160, 177, 255, 0.788);
+    }
+
+    .imganuel1 img{
+            width: 180px;
+            height: 150px;
+            object-fit: cover; 
+            transition: 0.5s;
+        }
+
+        .imganuel1 img:hover {
+            width: 200px;
+            height: 180px;
+                }
+
+    .imganuel1{
+        @include flex-row-center;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        }
+   
+
+.footergaleria{
+display: flex;
+justify-content: end;
+margin-right: 25px;
+}
+
+.logofacebook-galeria{
+    width: 40px;
+    margin: 10px;
+}
+
+.logowhatsapp-galeria{ 
+    width: 40px;
+    margin: 10px;
+}
+
+.logoinstagram-galeria{
+    width: 58px;
+}
+   
+
+
+
+
+
+/* Canciones */
+
+.anuelspotify{
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+    .footercanciones{
+        display: flex;
+        justify-content: end;
+        margin-right: 25px;
+    }
+
+.logofacebook-canciones{
+    width: 40px;
+    margin: 10px;
+}
+
+.logowhatsapp-canciones{ 
+    width: 40px;
+    margin: 10px;
+}
+
+.logoinstagram-canciones{
+    width: 60px;
+    
+}
+
+
+
+
+/* Contacto */
+
+    .titulocontacto h1{
+        @include flex-row-center;
+        font-size: 50px;
+        margin-top: 10px;
+        color: $color-secundario;
+        font-weight: bold;
+    }
+
+
+    .contacto-formulario { 
+        
+        padding: 10px 20px; 
+        display: flex;
+        flex-direction: column; 
+        background-color: #6c7bff; 
+        border-radius: 30px; 
+        margin: 0 25px 15px 25px; 
+    } 
+
+    .contacto-label {  
+        margin-top: 15px; 
+        color: $color-primario; 
+        font-weight: bold;
+    } 
+
+    .contacto-input { 
+        border: none; 
+        border-radius: 20px; 
+        padding: 8px; 
+        background-color: $color-primario; 
+        border-color: $color-primario; 
+    } 
+
+    .contacto-mensaje { 
+        border: none; 
+        border-radius: 20px; 
+        padding: 8px; 
+        height: 150px; 
+        background-color: $color-primario; 
+        border-color: $color-primario; 
+    } 
+
+    .contacto-enviar { 
+        background-color: $color-secundario; 
+        color: $color-primario; 
+        border: none; 
+        border-radius: 15px; 
+        width: 80px; 
+        padding: 8px; 
+        transition: background-color 0.5s;
+    }
+
+    .footercontacto{
+        display: flex;
+        justify-content: end;
+        margin-right: 35px;
+       }
+
+   .logofacebook{
+    width: 40px;
+    margin: 10px;
+   }
+
+   .logowhatsapp{
+    width: 40px;
+    margin: 10px;
+   }
+
+   .logoinstagram{
+    width: 58px;
+   }
+
+
+
+
+
+   /*INFORMACION*/
+       
+
+.paginformacion{
+background-color: rgba(0, 60, 255, 0.192);
+}
+.articles-informacion{
+    padding: 0.8%;
+}
+.backgroundcolor-nav-info{
+    background-color: $color-secundario;
+    height: 26px;
+}
+
+.letra-nav-info{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+
+.subtitulosh2 p {
+    font-family: 'REM', sans-serif;
+}
+
+.articles-informacion h2{
+    font-size: 33px;
+}
+
+.subtitulosh2 h2{
+    text-decoration: underline;
+}
+
+.articles-informacion {
+    padding: 0.8%;
+    font-size: 24px;
+}
+
+        .footerinformacion{
+         display: flex;
+         justify-content: end;
+         margin-right: 25px;
+        }
+
+        .logofacebook-informacion{
+            width: 40px;
+            margin: 10px;
+        }
+        
+        .logowhatsapp-informacion{
+            width: 40px;
+            margin: 10px;
+        }
+        
+        .logoinstagram-informacion{
+            width: 60px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*VISTA MOBILE*/
+    
+        @media screen and (max-width: 699px) {
+
+            .colorhamburguesa{
+                color: $color-primario;
+                background-color: $color-primario;
+            }
+
+            footer{
+                @include flex-center-center;
+                position:   end;
+                background-color: $color-secundario;
+            }
+
+            .backgroundcolor-nav{
+                background-color: $backgroundcolor-nav;
+                }
+        
+                .letra-nav{
+                    color: $color-primario;
+                    font-size: 20px;
+                }
+
+
+
+    /* Index */
+
+    .solodesktop{
+        display: none;
+    }
+
+        .imagen{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                )
+             ,url(../imagenes/mobilenuevo.jpg);
+             background-position: center center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 70vh;
+             display: flex;
+             justify-content: end;
+             align-items: center;
+    }
+     
+    .texto1  {h1{
+        background-color: rgba(0, 0, 0, 0.185);
+        color: $color-primario;
+        font-size: 60px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: bold;
+        position: relative;
+        left: 15px;
+        bottom: 25px;
+
+    }
+}
+    .textos{
+    background-color: $color-secundario;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .texto1 {
+        h2{
+    color: $color-primario;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    }
+}
+    .texto1 p{
+        color: $color-primario;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+}
+    
+    .logofacebook-index{
+        width: 62px;
+        padding: 5%;
+        
+    }
+    
+    .logowhatsapp-index{
+        width: 60px;
+        padding: 7%;
+    }
+    
+    .logoinstagram-index{
+        width: 60px;
+        padding: 7%;
+    }
+
+
+
+        
+    
+/* Canciones */
+
+    .maincanciones{
+        background-color: rgba(0, 0, 255, 0.068);
+    }
+
+.anuelspotify{
+    width: 100%;
+    height: 500px;
+    border-radius: 11px;
+    padding: 6px;
+}
+
+.footercanciones{
+    margin-top: 5px;
+}
+    .logofacebook-canciones{
+        width: 62px;
+        padding: 5%;
+    }
+    
+    .logowhatsapp-canciones{
+        width: 60px;
+        padding: 7%;
+    }
+    
+    .logoinstagram-canciones{
+        width: 60px;
+        padding: 7%;
+    }
+
+
+
+
+
+    /* Galeria */
+    
+    .imganuel1 img{
+        width: 165px;
+        height: 130px;
+        object-fit: cover; 
+        padding: 1%
+    }
+    
+    .imganuel1{
+        @include flex-row-center;
+        background-color: $color-cuarto;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        color: $color-secundario;
+        background-color: $color-cuarto;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    
+    .logofacebook-galeria{
+        width: 80px;
+        padding: 5%;
+    }
+    
+    .logowhatsapp-galeria{
+        width: 78px;
+        padding: 5%;
+    }
+    
+    .logoinstagram-galeria{
+        width: 78px;
+        padding: 5%;
+    }
+    
+
+
+
+
+    /* Informacion */
+    .articles-informacion{
+        padding: 0.8%;
+    }
+
+    .paginformacion{
+        background-color: rgba(0, 60, 255, 0.192);
+       }
+
+       .letra-nav-info{
+        color: $color-secundario;
+        background-color: #46464615;
+        font-size: 18px;
+        font-weight: bold ;
+       }
+
+        .articles-informacion{
+            padding: 0.8%;
+            font-size: 23px;
+        }
+
+    .subtitulosh2 h2{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 28px;
+    }
+
+    .logofacebook-informacion{
+        width: 62px;
+        padding: 5%;
+        
+    }
+    
+    .logowhatsapp-informacion{
+        width: 60px;
+        padding: 7%;
+    }
+    
+    .logoinstagram-informacion{
+        width: 60px;
+        padding: 7%;
+    }
+
+
+    /* Contacto */
+
+.titulocontacto h1{
+    @include flex-row-center;
+            font-size: 40px;
+            margin: 20px;
+            color: $color-secundario;
+            font-weight: bold;
+}
+
+    .contacto-formulario { 
+            padding: 10px 20px; 
+            display: flex;
+            flex-direction: column; 
+            background-color: #6c7bff; 
+            border-radius: 20px; 
+            margin: 0 25px 25px 25px; 
+        } 
+
+        .contacto-label {  
+            margin-top: 15px; 
+            color: $color-primario; 
+            font-weight: bold;
+        } 
+
+        .contacto-input { 
+            border: none; 
+            border-radius: 15px; 
+            padding: 8px; 
+            background-color: $color-primario; 
+            border-color: $color-primario; 
+        } 
+
+        .contacto-mensaje { 
+            border: none; 
+            border-radius: 15px; 
+            padding: 8px; 
+            height: 150px; 
+            background-color: $color-primario; 
+            border-color: $color-primario; 
+        } 
+
+        .contacto-enviar { 
+            background-color: $color-secundario; 
+            color: $color-primario; 
+            border: none; 
+            border-radius: 10px; 
+            width: 80px; 
+            padding: 8px; 
+            transition: background-color 0.5s;
+        }
+
+       .footercontacto{
+        margin-top: 35%;
+       }
+
+    .logofacebook{
+        width: 60px;
+        padding: 5%;
+        
+    }
+    
+    .logowhatsapp{
+        width: 60px;
+        padding: 7%;
+    }
+    
+    .logoinstagram{
+        width: 60px;
+        padding: 7%;
+    }
+}
